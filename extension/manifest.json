@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "MindsEye Chrome Agent Shell",
+  "version": "0.1.0",
+  "description": "Chrome as a MindsEye agent shell: captures browser events, applies LAW-T/Law-N, and connects to MindsEye OS.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "MindsEye Shell"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
