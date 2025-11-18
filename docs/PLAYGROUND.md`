@@ -1,0 +1,12 @@
+
+```markdown
+# Code & Binary Playground
+
+The popup includes:
+
+- Code input area
+- Binary analyzer
+- Pattern ID generator
+- Preview of how code transforms through Binary Engine
+
+This simulates the Moving Library integration.
