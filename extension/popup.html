@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MindsEye Shell</title>
+    <style>
+      body {
+        width: 300px;
+        height: 420px;
+        padding: 12px;
+        background: #0d1117;
+        color: #fff;
+        font-family: Arial, sans-serif;
+      }
+      .section {
+        margin-top: 12px;
+        padding: 10px;
+        background: #161b22;
+        border-radius: 6px;
+      }
+      .title {
+        font-size: 16px;
+        margin-bottom: 6px;
+      }
+      pre {
+        font-size: 11px;
+        white-space: pre-wrap;
+        color: #9ee8ff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>MindsEye Agent Shell</h2>
+
+    <div class="section">
+      <div class="title">Active Agents</div>
+      <div id="agentPanel"></div>
+    </div>
+
+    <div class="section">
+      <div class="title">Code Playground</div>
+      <textarea id="codeInput" rows="6" style="width:100%;"></textarea>
+      <button id="analyzeBtn">Analyze</button>
+      <pre id="codeOutput"></pre>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
